@@ -1,0 +1,15 @@
+<TabView selectedIndex="1" selectedColor="#FF0000">
+    <StackLayout *tabItem="{title: 'Profile', iconSource: '~/icon.jpg'}" >
+        <ListView [items]='items'>
+            <template let-item='item'>
+                <Label [text]='item.itemDesc' ></Label>
+            </template>
+        </ListView>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Stats'}">
+        <Label text="Second tab item"></Label>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Settings'}">
+        <Label text="Third tab item"></Label>
+    </StackLayout>
+</TabView>

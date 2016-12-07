@@ -1,0 +1,106 @@
+#custom{
+/*background-color: white;*/
+/*opacity:.8;*/
+
+/*border-width : 1; */
+/*border-color: black;*/
+
+}
+
+/*.btn{
+margin-top: 0;
+padding-top: 0;
+}
+*/
+GridLayout
+{
+margin-top: 60%;
+}
+/*Button
+{
+border : 0 solid black
+}*/
+
+/*.myclass {
+ border-radius: 50;
+ border-color: black;
+
+}*/
+/*.myclass1 {
+ border-radius: 0;
+ text-align: left;
+ font-size: 15;
+ 
+}*/
+
+/*.btn1 { font-family: 'Ionicons'; }
+.play { content: '\uf33b'; }
+*/
+.test{
+animation-name: opacity;
+   animation-duration: 2;
+}
+
+@keyframes opacity {
+from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+#one{
+color: green;
+/*background-color: rgba(255, 0, 0, 0.0) ;*/
+ border-bottom-color:#C0C0C0;
+ border-bottom-width: 1;
+ text-align: left;
+ font-size: 15;
+}
+#two{
+/*background-color:rgba(255, 0, 0, 0.0);*/
+ border-bottom-color:#C0C0C0;
+ border-bottom-width: 1;
+ text-align: left;
+ font-size: 15;
+
+ /*border-width: 1;*/
+}
+#three{
+color: blue;
+/*background-color: rgba(255, 0, 0, 0.0);*/
+ border-bottom-color:#C0C0C0;
+ border-bottom-width: 1;
+ text-align: left;
+ font-size: 15;
+ /*border-width: 1;*/
+}
+#four
+{
+color:orange;
+/*background-color: rgba(255, 0, 0, 0.0);*/
+ /*border-bottom-color:#C0C0C0;*/
+ border-bottom-width: 1;
+ text-align: left;
+ font-size: 15;
+}
+
+.btn  .btn-active .font-awesome .new{
+color:blue;
+}
+
+.containerLayout
+{
+background-color: transparent;
+}
+/*.containerLayout {
+   animation-name: example;
+   animation-duration: 1;
+   animation-timing-function: cubicBezier(0, -0.1, 5.04, 8.3);
+   animation-fill-mode:;
+}*/
+/*.containerLayout {
+    animation-name: scale;
+   animation-duration: 1;
+}
+@keyframes scale {
+   from { transform: scale(1, 0); }
+   to { transform: scale(1, 0); }
+}*/

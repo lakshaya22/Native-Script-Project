@@ -1,0 +1,22 @@
+.third {
+    background-color: #ffffff;
+    text-align: left;
+    vertical-align: center;
+}
+
+.header {
+    background-color: #8C489F;
+    color: whitesmoke;
+    border-radius: 1;
+}
+
+.footer {
+    background-color: #8C489F;
+    color: whitesmoke;
+    border-radius: 1;
+}
+
+.item {
+    text-align: left;
+    vertical-align: center;
+}

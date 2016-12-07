@@ -1,0 +1,55 @@
+<GridLayout>
+<!-- <Button row="0" col="0"class="{{ visibility1 ? 'btn btn-outline btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}"  id="home" 
+text="&#xf015; Home" (tap)="onChange(0)">
+</Button>
+<Button row="0" col="1" class="{{ visibility2 ? 'btn btn-outline btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}" id="member" 
+text="&#xf2be; Member" (tap)="onChange(1)">
+</Button>
+<Button row="0" col="2" class="btn btn-primary btn-rounded-sm btn-active font-awesome"  id="add" text="&#xf055; Add"(tap)="displayActionDialog()">
+</Button>
+<Button row="0" col="3" class="{{ visibility3 ? 'btn btn-outline btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}"  id="lead" 
+text="&#xf007; Lead" (tap)="onChange(2)">
+</Button>
+<Button row="0" col="4" class="{{ visibility4 ? 'btn btn-outline btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}"  id="more" 
+text="&#xf0c9; More" (tap)="onChange(3)">
+</Button> -->
+
+
+<GridLayout id="tablist" rows="*" columns="*,*,*,*,*" width="100%" height="9%" 
+backgroundColor="#3e3a3a">
+<Button row="0" col="0"class="{{ visibility1 ? ' btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}"  id="home" 
+text="&#xf015;                                                       Home" (tap)="onChange(0)" style="{{ visibility1 ? ' border-bottom-width: 2' : 'border-bottom-width: 0'}}">
+</Button>
+<Button row="0" col="1" class="{{ visibility2 ? ' btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}" id="member" 
+text="&#xf2be;                                                      Member" (tap)="onChange(1)"
+style="{{ visibility2 ? ' border-bottom-width: 2' : 'border-bottom-width: 0'}}">
+</Button>
+<Button row="0" col="2" class="  btn-rounded-sm btn-active font-awesome"  id="add" text="{{ toggleDialog ? '&#xf055;' : '&#xf057;'}}"(tap)="displayActionDialog()" style="color:#ff1919; font-size: 30;">
+</Button>
+<Button row="0" col="3" class="{{ visibility3 ? ' btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}"  id="lead" 
+text="&#xf007;                                                       Lead" (tap)="onChange(2)"
+style="{{ visibility3 ? ' border-bottom-width: 2' : 'border-bottom-width: 0'}}">
+</Button>
+<Button row="0" col="4" class="{{ visibility4 ? ' btn-rounded-sm btn-active font-awesome' : 'btn btn-primary btn-rounded-sm btn-active font-awesome'}}"  id="more" 
+text="&#xf0c9;                                                       More" (tap)="onChange(3)"
+style="{{ visibility4 ? ' border-bottom-width: 2' : 'border-bottom-width: 0'}}">
+</Button>
+</GridLayout>
+
+<StackLayout id="mainView" visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
+<list></list>
+</StackLayout>
+
+<StackLayout id="mainView" visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
+    <homelist></homelist>
+</StackLayout>
+
+<StackLayout  id="mainView" visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
+    <mainpopup></mainpopup>
+</StackLayout>
+
+<StackLayout id="mainView" visibility="{{ visibility4 ? 'visible' : 'collapsed' }}">
+    <Label [text]="'This is your more page'" class="m-15 h3 p-5 text-center"></Label>
+</StackLayout>
+
+</GridLayout>
